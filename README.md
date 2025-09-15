@@ -17,7 +17,7 @@ Cross-platform desktop client for marchat chat server with real-time messaging, 
 
 ## Requirements
 
-- Go 1.19 or later
+- Go 1.23 or later
 - Compatible marchat server instance
 
 ## Dependencies
@@ -184,5 +184,6 @@ go build -ldflags="-s -w" -o marchat-gui main.go
 - Ensure sufficient disk space
 
 ## License
+
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
