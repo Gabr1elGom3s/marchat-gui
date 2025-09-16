@@ -1,5 +1,7 @@
 # marchat GUI Client
 
+<img src="marchat-gui.jpg" alt="marchat GUI Client Screenshot" width="600">
+
 Cross-platform desktop client for marchat chat server with real-time messaging, file sharing, and end-to-end encryption support.
 
 ## Features
@@ -187,3 +189,4 @@ go build -ldflags="-s -w" -o marchat-gui main.go
 
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
